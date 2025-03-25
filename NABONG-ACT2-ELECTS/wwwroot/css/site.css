@@ -1,0 +1,225 @@
+﻿/* Basic styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+}
+
+/* Header and Navigation */
+header {
+    margin-bottom: 15px;
+}
+
+.logo-container {
+    background-color: #efeeef;
+    border-radius: 34px;
+    padding: 35px 45px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container {
+    background-color: #efeeef;
+    border-radius: 34px;
+    padding: 40px 50px;
+    width: 155%;
+    position: relative;
+    left: -300px;
+}
+
+.logo {
+    color: #051cae;
+    font-weight: bold;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: black;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0 20px;
+}
+
+    .nav-link.active {
+        color: #051cae;
+        font-weight: bold;
+    }
+
+/* Global row spacing for Home and About */
+.container .row {
+    margin-top: -80px;
+}
+
+/* Homepage Content Box */
+.content-box-home {
+    background-color: #efeeef;
+    border-radius: 34px;
+    padding: 50px;
+    min-height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* General Content Box - Other Pages */
+.content-box {
+    background-color: #efeeef;
+    border-radius: 34px;
+    padding: 50px;
+    min-height: 470px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* ==== PORTFOLIO SPECIFIC START ==== */
+/* Only adjust the Portfolio row spacing */
+.portfolio-container .row {
+    margin-top: -30px;
+}
+
+/* Portfolio Content Box */
+.content-box-portfolio {
+    background-color: #efeeef;
+    border-radius: 34px;
+    padding: 50px;
+    min-height: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Project Card */
+.project-card {
+    width: 110%;
+    padding: 20px;
+    background-color: #efeeef;
+    border-radius: 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-image {
+    width: 90%;
+    height: 250px;
+    background-color: black;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+/* ==== PORTFOLIO SPECIFIC END ==== */
+
+/* Avatar Section - Homepage */
+.avatar-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.avatar-container img {
+    max-width: 65%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* Chat Box - Homepage */
+.chat-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 60px;
+}
+
+.chat-bubble {
+    background-color: #177afe;
+    color: white;
+    border-radius: 60px;
+    padding: 30px 50px;
+    margin-bottom: 15px;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-transform: lowercase;
+    max-width: 85%;
+    text-align: center;
+    margin-left: 30px;
+}
+
+/* About Page Text Content */
+.content-box-about-text {
+    background-color: #efeeef;
+    border-radius: 34px;
+    padding: 50px;
+    min-height: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-top: 45px;
+}
+
+/* About Page Avatar Section */
+.content-box-avatar {
+    background-color: #efeeef;
+    border-radius: 34px;
+    padding: 50px;
+    min-height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+
+.about-avatar {
+    flex: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    max-width: 80%;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .content-box-home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chat-box {
+        align-items: center;
+        padding-right: 0;
+    }
+
+    .chat-bubble {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .content-box-about-text,
+    .content-box-avatar {
+        padding: 20px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .about-avatar {
+        max-width: 80%;
+    }
+}
+
+/* Fix container structure */
+.row .col-md-6 {
+    display: flex;
+    justify-content: center;
+}
